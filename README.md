@@ -1,6 +1,6 @@
 
 #  Ducky2Arduino
-##  Live Website Is Here:[Ducky2Arduino](https://oceanofanythingofficial.github.io/Ducky2Arduino/)
+##  Live Website Is Here: [Ducky2Arduino](https://oceanofanythingofficial.github.io/Ducky2Arduino/)
 DuckyScript -> Arduino converter/compiler + HID mouse emulation.
 ```diff
 
