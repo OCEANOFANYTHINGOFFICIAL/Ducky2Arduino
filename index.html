@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+  <title>Ducky2Arduino: Convert Ducky Script Payload Into Arduino Code</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="https://oceanofanythingg.blogspot.com/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/codemirror/CodeMirror/master/lib/codemirror.css">
+  <link rel="stylesheet" href="css/monokai-theme.css">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.19.0/codemirror.js"></script>
+  <link rel="stylesheet" href="fonts/vt323.css">
+  <link rel="stylesheet" href="fonts/prompt.css">
+  <link rel="stylesheet" href="fonts/sourceCodePro.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="navbar form-inline">
+      <div class="navbar-header">
+        <a class="navbar-brand colorWhite"
+          href="https://oceanofanythingofficial.github.io/Ducky2Arduino/">Ducky2Arduino</a>
+        <button type="button" class="btn btn-success navbar-btn" id="compileThis">&#9658; Run Compiler</button>
+        <input type="text" value="Payload Project Name" class="form-control" id="payloadName" />
+        <button type="button" class="btn btn-primary navbar-btn" id="download"><span
+            class="glyphicon glyphicon-download-alt"></span>&nbsp;&nbsp;&nbsp; Download Payload </button>
+        <span class="btn btn-default navbar-btn">
+          <a href="https://github.com/hak5darren/USB-Rubber-Ducky/wiki/Payloads" target="_blank">
+            <span class="glyphicon glyphicon-folder-open"></span>&nbsp;&nbsp;&nbsp; Ducky Payloads
+          </a>
+        </span>
+        <span class="btn btn-default navbar-btn">
+          <a href="https://github.com/OCEANOFANYTHINGOFFICIAL/Ducky2Arduino/blob/main/README.md" target="_blank">
+            <span class="glyphicon glyphicon-info-sign"></span>&nbsp;&nbsp;&nbsp; Read Documentation
+          </a>
+        </span>
+      </div>
+    </div>
+    <div class="row text-center">
+      <strong>NOTE:</strong> This Compiler Is Dependent On <a class="Attribute"
+        href="https://github.com/NicoHood/HID">NicoHood's
+        HID</a>.<br />You Need To Add It To The Arduino IDE Library.
+    </div>
+    <div class="row">
+      <div class="col-xs-6">
+        <label for="duckyScript">
+          <h3>Ducky Script</h3>
+        </label>
+        <br />
+        <textarea id="duckyScript" class="DuckyScript" placeholder="You Can Give/Write Your Ducky Script Here!" autofocus></textarea>
+      </div>
+      <div class="col-xs-6">
+        <label for="arduinoout">
+          <h3>Arduino Code</h3>
+        </label><br />
+        <textarea readonly id="arduiCode" class="ArduiCode"></textarea>
+      </div>
+    </div>
+    <br>
+    <div class="container">
+      <div class="row consoleHead" id="console-head">
+        Console:
+        <div id="console" class="consoleBody">&nbsp;</div>
+      </div>
+    </div>
+
+
+    <div class="row text-center footer">
+      Copyright &copy; <a class="Attribute"
+        href="https://oceanofanythingofficial.github.io/Ducky2Arduino">Ducky2Arduino</a> 2021 - 3021 By <a
+        class="Attribute" href="https://oceanofanythingofficial.github.io"> Nakshatra Ranjan Saha (OCEAN OF
+        ANYTHING)</a>
+    </div>
+    <script src="js/clike.js"></script>
+    <script src="js/vbscript.js"></script>
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/Ducky2Arduino.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
